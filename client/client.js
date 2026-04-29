@@ -16,7 +16,7 @@ const { name = `device-${Math.random().toString(36).slice(2, 6)}`, url = 'http:/
 
 console.log(`Connecting to ${url} as "${name}"...`);
 
-const socket = io(`${url}/device`, { transports: ['websocket'] });
+const socket = io(`${url}/device`);
 
 const rl = readline.createInterface({
   input: process.stdin,
